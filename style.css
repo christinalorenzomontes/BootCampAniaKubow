@@ -1,14 +1,30 @@
 body{
-    background-color: lightcoral;
     display: flex;
     flex-direction: column;
-    font: "Gill Sans", "Gill Sans MT", Calibri;
-}
+    font-family: 'Roboto', sans-serif;}
 
-header {
+nav {
     width: 100%; 
     height: 50px; 
-    background-color: rgb(113,74,145);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+li {
+    margin: 15px 5px;
+}
+
+.logo {
+    height: 30px;
+    margin: 15px 30px;
 }
 
 section {
@@ -26,14 +42,26 @@ section {
     box-shadow: 2px 2px 5px grey;
 }
 
-.about-me {
+.hero {
     width: 100%;
-    height: 250px;
     background-color: rgb(177, 69, 21, 0.8);
-    /* margin: 10px 0 10px 0;
-    border: solid 10px black;
-    border-radius: 15px; */
+    display: flex;
+    justify-content: space-between;
 } 
+
+.hero-info {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    margin: 5px;
+}
+
+.second {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    margin: 5px;
+}
 
 .avatar {
     width: 100px;
@@ -73,4 +101,21 @@ section {
 
 .button:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6);
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: orangered;
+}
+
+a:active {
+    color: purple;
 }
